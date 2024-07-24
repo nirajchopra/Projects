@@ -1,0 +1,46 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Add Vehicle</title>
+</head>
+<body>
+    <h1>Add Vehicle</h1>
+    <form action="VehicleCtl" method="post">
+        <input type="hidden" name="operation" value="add">
+        <table>
+            <tr>
+                <td>Number:</td>
+                <td><input type="text" name="number" required></td>
+            </tr>
+            <tr>
+                <td>Purchase Date:</td>
+                <td><input type="date" name="purchaseDate" required></td>
+            </tr>
+            <tr>
+                <td>Insurance Amount:</td>
+                <td><input type="text" name="insuranceAmount" required></td>
+            </tr>
+            <tr>
+                <td>Colour:</td>
+                <td>
+                    <select name="colour" required>
+                        <option value="">Select Colour</option>
+                        <option value="Red">Red</option>
+                        <option value="Blue">Blue</option>
+                        <option value="Green">Green</option>
+                        <option value="Black">Black</option>
+                        <option value="White">White</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Add Vehicle">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

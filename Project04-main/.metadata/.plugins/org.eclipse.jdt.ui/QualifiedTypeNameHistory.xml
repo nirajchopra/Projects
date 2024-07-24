@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="javax.servlet.annotation.WebServlet"/>
+    <fullyQualifiedTypeName name="com.rays.pro4.controller.BaseCtl"/>
+    <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
+    <fullyQualifiedTypeName name="com.sun.tools.javac.util.List"/>
+    <fullyQualifiedTypeName name="java.sql.Date"/>
+    <fullyQualifiedTypeName name="com.rays.pro4.Model.VehicleModel"/>
+    <fullyQualifiedTypeName name="com.rays.pro4.controller.VehicleCtl"/>
+    <fullyQualifiedTypeName name="com.rays.pro4.Bean.BaseBean"/>
+    <fullyQualifiedTypeName name="com.rays.pro4.Bean.VehicleBean"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,40 @@
+package com.rays.proj4.Test;
+
+import com.rays.pro4.Bean.ProductBean;
+import com.rays.pro4.Bean.VehicleBean;
+import com.rays.pro4.Exception.ApplicationException;
+import com.rays.pro4.Model.ProductModel;
+import com.rays.pro4.Model.VehicleModel;
+
+public class TestVehicleModel {
+	
+	public static void main(String[] args) {
+		
+		testAdd();
+		
+	}
+
+	private static void testFindByPk() throws Exception {
+		try {
+			VehicleBean bean = new VehicleBean();
+			long pk = 5L;
+			VehicleModel model = new VehicleModel();
+			bean = model.findByPK(pk);
+			if (bean == null) {
+				System.out.println("Test find by pk fail");
+			}
+			System.out.println(bean.getId());
+			System.out.println(bean.getNumber());
+			System.out.println(bean.getPurchaseDate());
+			System.out.println(bean.getInsuranceAmount());
+			System.out.println(bean.getColor());
+
+
+		} catch (ApplicationException e) {
+			e.printStackTrace();
+		}
+
+	}
+
+
+}

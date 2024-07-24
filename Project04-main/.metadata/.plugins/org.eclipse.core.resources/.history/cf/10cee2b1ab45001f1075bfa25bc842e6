@@ -1,0 +1,75 @@
+<%@page import="com.rays.pro4.Bean.VehicleBean"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet"
+	href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="/resources/demos/style.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+	$(function() {
+		$("#udatee").datepicker({
+			changeMonth : true,
+			changeYear : true,
+			yearRange : '1980:2020',
+		});
+	});
+</script>
+<title>Add Vehicle</title>
+</head>
+
+<body>
+	<jsp:useBean id="bean" class="com.rays.pro4.Bean.VehicleBean"
+		scope="request"></jsp:useBean>
+	<%@ include file="Header.jsp"%>
+	<center>
+		<form action="VehicleCtl" method="post"></form>
+		<h1>Vehicle Details</h1>
+
+		<%
+        VehicleBean vehicle = (VehicleBean) request.getAttribute("vehicle");
+        if (vehicle != null) {
+    %>
+		<table border="1">
+			<tr>
+
+				<th>Number</th>
+				<td><input type="text" name="number"
+					value="<%=(bean != null) ? bean.getNumber() : ""%>"
+					placeholder="Enter Number"></td>
+
+			</tr>
+			<tr>
+
+				<th>Purchase Date</th>
+				<td><input type="text" name="purchaseDate"
+					value="<%=(bean != null) ? bean.getPurchaseDate() : ""%>"
+					placeholder="Enter Purchase Date"></td>
+
+			</tr>
+			<tr>
+
+				<th>Insurance Amount</th>
+				<td><input type="text" name="insuranceAmount"
+					value="<%=(bean != null) ? bean.getInsuranceAmount() : ""%>"
+					placeholder="Enter Insurance Amonut"></td>
+
+			</tr>
+			<tr>
+
+				<th>Colour</th>
+				<td><input type="text" name="colour"
+					value="<%=(bean != null) ? bean.getColour() : ""%>"
+					placeholder="Enter colour"></td>
+
+			</tr>
+
+		</table>
+
+	</center>
+</body>
+</html>

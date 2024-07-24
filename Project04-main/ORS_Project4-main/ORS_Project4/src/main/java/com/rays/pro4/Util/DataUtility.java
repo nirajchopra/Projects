@@ -175,4 +175,9 @@ public class DataUtility {
 		System.out.println(getInt("124"));
 	}
 
+	public static Double getDouble(String parameter) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

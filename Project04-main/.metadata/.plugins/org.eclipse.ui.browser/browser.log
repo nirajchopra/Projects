@@ -1,0 +1,38 @@
+
+Jul 18, 2024 11:49:40.11 NEW SESSION
+Jul 18, 2024 11:49:40.11 Created TensorFlow Lite XNNPACK delegate for CPU.
+Jul 18, 2024 11:57:12.37 [21668:4112:0718/115712.375:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+Jul 18, 2024 13:41:32.04 [21668:21648:0718/134132.048:ERROR:device_event_log_impl.cc(196)] [13:41:32.047] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: Element not found. (0x490)
+Jul 18, 2024 13:46:25.87 [21668:21648:0718/134625.878:ERROR:device_event_log_impl.cc(196)] [13:46:25.875] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: Element not found. (0x490)
+Jul 18, 2024 14:08:26.79 [21668:21648:0718/140826.798:ERROR:device_event_log_impl.cc(196)] [14:08:26.798] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: Element not found. (0x490)
+Jul 18, 2024 14:28:13.02 [21668:21648:0718/142813.024:ERROR:device_event_log_impl.cc(196)] [14:28:13.024] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: Element not found. (0x490)
+Jul 18, 2024 14:39:19.10 [21668:21648:0718/143919.104:ERROR:device_event_log_impl.cc(196)] [14:39:19.103] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: Element not found. (0x490)
+Jul 18, 2024 14:44:46.75 [21668:21648:0718/144446.752:ERROR:interface_endpoint_client.cc(722)] Message 0 rejected by interface blink.mojom.WidgetHost
+Jul 19, 2024 15:08:38.44 Created TensorFlow Lite XNNPACK delegate for CPU.
+Jul 19, 2024 15:23:30.91 [1100:21648:0719/152330.917:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+Jul 19, 2024 18:24:59.75 [1100:21648:0719/182459.751:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+Jul 19, 2024 18:24:59.76 [1100:21648:0719/182459.769:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -105
+Jul 19, 2024 22:53:39.34 [1100:21648:0719/225339.343:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -106
+Jul 19, 2024 22:53:39.35 [1100:23628:0719/225339.353:ERROR:get_updates_processor.cc(263)] PostClientToServerMessage() failed during GetUpdates with error Network error (ERR_INTERNET_DISCONNECTED)
+Jul 19, 2024 22:54:24.36 [1100:1340:0719/225424.366:ERROR:get_updates_processor.cc(263)] PostClientToServerMessage() failed during GetUpdates with error Network error (ERR_INTERNET_DISCONNECTED)
+Jul 19, 2024 22:56:16.87 [1100:1340:0719/225616.876:ERROR:get_updates_processor.cc(263)] PostClientToServerMessage() failed during GetUpdates with error Network error (ERR_INTERNET_DISCONNECTED)
+Jul 19, 2024 22:59:05.65 [1100:1340:0719/225905.648:ERROR:get_updates_processor.cc(263)] PostClientToServerMessage() failed during GetUpdates with error Network error (ERR_INTERNET_DISCONNECTED)
+Jul 19, 2024 23:06:07.55 [1100:1340:0719/230607.552:ERROR:get_updates_processor.cc(263)] PostClientToServerMessage() failed during GetUpdates with error Network error (ERR_INTERNET_DISCONNECTED)
+Jul 19, 2024 23:16:07.57 [1100:1340:0719/231607.573:ERROR:get_updates_processor.cc(263)] PostClientToServerMessage() failed during GetUpdates with error Network error (ERR_INTERNET_DISCONNECTED)
+Jul 19, 2024 23:59:17.34 [1100:21648:0719/235917.340:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+Jul 20, 2024 03:00:46.22 [1100:21648:0720/030046.224:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+Jul 22, 2024 10:10:15.28 [1100:21648:0722/101015.286:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -106
+Jul 22, 2024 10:13:40.99 Created TensorFlow Lite XNNPACK delegate for CPU.
+Jul 22, 2024 10:17:05.20 [20624:16656:0722/101705.201:ERROR:interface_endpoint_client.cc(722)] Message 0 rejected by interface blink.mojom.WidgetHost
+Jul 22, 2024 10:27:56.95 [20624:7464:0722/102756.958:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+Jul 22, 2024 12:01:16.79 [20624:16656:0722/120116.793:ERROR:chrome_web_ui_controller_factory.cc(520)] Requested load of chrome://newtab/ for incorrect profile type.
+Jul 22, 2024 12:26:08.21 [20624:16656:0722/122608.213:ERROR:chrome_web_ui_controller_factory.cc(520)] Requested load of chrome://newtab/ for incorrect profile type.
+Jul 22, 2024 12:50:43.74 [20624:16656:0722/125043.740:ERROR:device_event_log_impl.cc(196)] [12:50:43.739] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: Element not found. (0x490)
+Jul 22, 2024 13:13:10.59 [20624:7464:0722/131310.595:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+Jul 22, 2024 13:25:47.06 [20624:16656:0722/132547.061:ERROR:device_event_log_impl.cc(196)] [13:25:47.058] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: Element not found. (0x490)
+Jul 22, 2024 13:56:56.14 [20624:7464:0722/135656.145:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+Jul 22, 2024 14:04:15.12 [20624:16656:0722/140415.123:ERROR:device_event_log_impl.cc(196)] [14:04:15.124] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: Element not found. (0x490)
+Jul 22, 2024 14:08:12.77 [20624:7464:0722/140812.775:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+Jul 22, 2024 17:09:40.05 [20624:7464:0722/170940.052:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -105
+Jul 23, 2024 11:54:29.05 [20624:7464:0723/115429.050:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -106
+Jul 23, 2024 11:54:29.11 [20624:740:0723/115429.118:ERROR:get_updates_processor.cc(263)] PostClientToServerMessage() failed during GetUpdates with error Network error (ERR_INTERNET_DISCONNECTED)

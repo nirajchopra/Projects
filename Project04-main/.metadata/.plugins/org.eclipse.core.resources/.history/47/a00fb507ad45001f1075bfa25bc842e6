@@ -1,0 +1,93 @@
+package com.rays.pro4.Model;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+import com.rays.pro4.Bean.ProductBean;
+import com.rays.pro4.Bean.VehicleBean;
+
+public class VehicleModel {
+	
+	public Integer nextPK() throws Exception {
+
+		int pk = 0;
+
+		Class.forName("com.mysql.cj.jdbc.Driver");
+
+		Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/vehicles", "root", "root");
+
+		PreparedStatement pstmt = conn.prepareStatement("select max(id) from vehicles");
+
+		ResultSet rs = pstmt.executeQuery();
+
+		while (rs.next()) {
+
+			pk = rs.getInt(1);
+
+			System.out.println("max id = " + pk);
+
+		}
+		return pk + 1;
+
+	}
+	
+	public long add(VehicleBean bean) throws Exception {
+
+		int pk = 0;
+
+		Class.forName("com.mysql.cj.jdbc.Driver");
+
+		Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/vehicles", "root", "root");
+
+		pk = nextPK();
+		VehicleBean bean1 = new VehicleBean();
+		conn.setAutoCommit(false);
+
+		PreparedStatement pstmt = conn.prepareStatement("insert into vehicles values(?,?,?,?,?)");
+
+		pstmt.setInt(1, pk);
+		pstmt.setString(2, bean1.getNumber());
+		pstmt.setDate(3, new java.sql.Date(bean1.getPurchaseDate().getTime()));
+		pstmt.setDouble(4,bean1.getInsuranceAmount());
+		pstmt.setString(5, bean1.getColour());
+
+		int i = pstmt.executeUpdate();
+		System.out.println("Vehicle Add Successfully " + i);
+		conn.commit();
+		pstmt.close();
+
+		return pk;
+	}
+
+		
+
+		
+		public VehicleBean findByPk(long pk) throws Exception {
+
+			Class.forName("com.mysql.cj.jdbc.Driver");
+
+			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/vehicles", "root", "root");
+			PreparedStatement ps = conn.prepareStatement("select * from vehicles where id = ?");
+
+			ps.setLong(1, pk);
+
+			ResultSet rs = ps.executeQuery();
+
+			VehicleBean bean = null;
+
+			while (rs.next()) {
+
+				bean = new VehicleBean();
+
+				bean.setId(rs.getInt(1));
+				bean.setNumber(rs.getString(2));
+				bean.setPurchaseDate(rs.getDate(3));
+				bean.setInsuranceAmount(rs.getDouble(4));
+				bean.setColour(rs.getString(5));
+
+			}
+			return bean;
+		}
+}

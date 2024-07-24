@@ -1,0 +1,63 @@
+<%@page import="com.rays.pro4.Bean.VehicleBean"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet"
+	href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="/resources/demos/style.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+	$(function() {
+		$("#udatee").datepicker({
+			changeMonth : true,
+			changeYear : true,
+			yearRange : '1980:2020',
+		});
+	});
+</script>
+<title>Insert title here</title>
+</head>
+
+<body>
+<h1>Vehicle Details</h1>
+
+    <%
+        VehicleBean vehicle = (VehicleBean) request.getAttribute("vehicle");
+        if (vehicle != null) {
+    %>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <td><%= vehicle.getId() %></td>
+        </tr>
+        <tr>
+            <th>Number</th>
+            <td><%= vehicle.getNumber() %></td>
+        </tr>
+        <tr>
+            <th>Purchase Date</th>
+            <td><%= vehicle.getPurchaseDate() %></td>
+        </tr>
+        <tr>
+            <th>Insurance Amount</th>
+            <td><%= vehicle.getInsuranceAmount() %></td>
+        </tr>
+        <tr>
+            <th>Colour</th>
+            <td><%= vehicle.getColour() %></td>
+        </tr>
+    </table>
+    <%
+        } else {
+    %>
+    <p>No vehicle found with the provided ID.</p>
+    <%
+        }
+    %>
+
+</body>
+</html>

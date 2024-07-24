@@ -1,0 +1,10 @@
+package com.rays.pro4.controller;
+
+import javax.servlet.annotation.WebServlet;
+
+@WebServlet(name = "VehicleCtl", urlpatterns = {"/ctl/VehicleCtl"} )
+public class VehicleCtl {
+	
+	
+
+}

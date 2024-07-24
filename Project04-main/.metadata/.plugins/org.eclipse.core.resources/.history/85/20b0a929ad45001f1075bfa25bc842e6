@@ -1,0 +1,71 @@
+package com.rays.proj4.Test;
+
+import java.text.SimpleDateFormat;
+
+import com.rays.pro4.Bean.ProductBean;
+import com.rays.pro4.Bean.VehicleBean;
+import com.rays.pro4.Exception.ApplicationException;
+import com.rays.pro4.Model.ProductModel;
+import com.rays.pro4.Model.VehicleModel;
+
+public class TestVehicleModel {
+	
+	public static void main(String[] args) {
+		
+		testAdd();
+		
+	}
+
+	public static void testAdd() {
+		try {
+			VehicleBean bean = new VehicleBean();
+
+			SimpleDateFormat sdf = new SimpleDateFormat("MM-dd-yyyy");
+			bean.setId(1);
+			bean.setNumber("MP 0703");
+			bean.setPurchaseDate(sdf.parse("05-07-2023"));
+			bean.setInsuranceAmount(12345.5d);
+			bean.setColour("red");
+			
+			VehicleModel model = new VehicleModel();
+
+			long pk = model.add(bean);
+			VehicleBean addedbean = model.findByPk(pk);
+			System.out.println("Test add succ");
+
+			if (addedbean == null) {
+				System.out.println("Test add fail");
+			}
+
+			System.out.println("record insert");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+
+	private static void testFindByPk() throws Exception {
+		try {
+			VehicleBean bean = new VehicleBean();
+			long pk = 5L;
+			VehicleModel model = new VehicleModel();
+			bean = model.findByPk(pk);
+			if (bean == null) {
+				System.out.println("Test find by pk fail");
+			}
+			System.out.println(bean.getId());
+			System.out.println(bean.getNumber());
+			System.out.println(bean.getPurchaseDate());
+			System.out.println(bean.getInsuranceAmount());
+			System.out.println(bean.getColour());
+
+
+		} catch (ApplicationException e) {
+			e.printStackTrace();
+		}
+
+	}
+
+
+}

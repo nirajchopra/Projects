@@ -11,6 +11,7 @@ import java.util.List;
 
 import com.rays.pro4.Bean.ProductBean;
 import com.rays.pro4.Bean.RoleBean;
+import com.rays.pro4.Bean.VehicleBean;
 import com.rays.pro4.Exception.ApplicationException;
 import com.rays.pro4.Util.JDBCDataSource;
 
@@ -238,6 +239,16 @@ public class ProductModel {
 		rs.close();
 
 		return list;
+	}
+
+	public void delete(VehicleBean deletebean) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public List search(VehicleBean bean, int pageNo, int pageSize) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

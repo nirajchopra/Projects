@@ -1,0 +1,40 @@
+package com.rays.pro4.Bean;
+
+import java.util.Date;
+
+public class VehicleBean {
+
+	private int id;
+	private String number;
+	private Date purchaseDate;
+	private double insuranceAmount;
+	private String colour;
+	
+	public int getId() {
+		return id;
+	}
+	public void setId() {
+		this.id = id;
+	}
+	
+	public String getNumber() {
+		return number;
+	}
+	public void setNumber() {
+		this.number = number;
+	}
+	
+	public Date getPurchaseDate() {
+		return purchaseDate;
+	}
+	public void setPurchaseDate() {
+		this.purchaseDate = purchaseDate;
+	}
+	
+	public double getInsuranceAmount() {
+		return insuranceAmount;
+	}
+	public void setInsuranceAmount() {
+		this.insuranceAmount = insuranceAmount;
+	}
+}
