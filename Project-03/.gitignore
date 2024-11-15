@@ -1,0 +1,4 @@
+# Git ignore rules 
+*.sock
+mysql-data/
+node_modules/
